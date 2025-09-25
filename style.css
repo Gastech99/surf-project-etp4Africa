@@ -1,0 +1,75 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+.navbar {
+  background-color: #343a40; /* Remplace #3498db par la couleur de ton choix */
+}
+
+.navbar a {
+  color: white;
+}
+
+.home-image {
+  background-color: #4f5356;
+}
+
+.img-full {
+  width: 100vw;
+  height: 70vh;
+  object-fit: cover;
+  display: block;
+}
+
+.home-image {
+  position: relative;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Couleur noire semi-transparente */
+  z-index: 1;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* ou une autre couleur pour le texte */
+  text-align: center;
+  z-index: 2;
+}
+
+.button-group {
+  margin-top: 20px;
+}
+
+.button-group button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+.card i,
+h5 {
+  font-size: 3rem;
+  color: #000; /* Couleur des icônes */
+  margin-bottom: 15px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.card-group {
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.row-pricing {
+  margin-top: 20px;
+  justify-content: space-between;
+}
