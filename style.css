@@ -20,6 +20,78 @@
   display: block;
 }
 
+/* Responsive styles */
+@media (max-width: 991px) {
+  .img-full {
+    height: 40vh;
+  }
+  .overlay-content h1 {
+    font-size: 2rem;
+  }
+  .overlay-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+    margin-bottom: 5px;
+  }
+  .button-group button {
+    font-size: 0.9rem;
+    padding: 8px 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .img-full {
+    height: 30vh;
+  }
+  .overlay-content {
+    padding: 0 10px;
+  }
+  .button-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .button-group button {
+    width: 100%;
+    margin: 5px 0;
+  }
+  .card i,
+  h5 {
+    font-size: 2rem;
+  }
+  .row.row-cols-1.row-cols-md-3.g-4 {
+    flex-direction: column;
+  }
+
+  .row-pricing {
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .img-full {
+    height: 20vh;
+  }
+  .overlay-content h1 {
+    font-size: 1.2rem;
+  }
+  .overlay-content h3 {
+    font-size: 1rem;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+  .row-pricing {
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+}
+
 .home-image {
   position: relative;
 }
